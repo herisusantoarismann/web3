@@ -1,8 +1,25 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import {
+  Navbar,
+  Welcome,
+  Loader,
+  Services,
+  Transactions,
+  Footer,
+} from "./components";
 
-function App() {
-  return <h1 className="text-red-600">Ini React</h1>;
-}
+const App = () => {
+  return (
+    <div className="min-h-screen">
+      <div className="gradient-bg-welcome">
+        <Navbar />
+        <Welcome />
+      </div>
+      <Services />
+      <Transactions />
+      <Footer />
+    </div>
+  );
+};
 
 export default App;
